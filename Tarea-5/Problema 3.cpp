@@ -5,7 +5,7 @@
  * Fecha de última modificación: 11/Oct/2015
  * Descripción:
  * ALGORITMO PARA OBTENER LA CALIFICACION DE UNA TAREA DE ALGORITMOS
- * El algoritmo ,ayuda , dado el modo en que fue calificada la tarea ya se una + o un - determinar la calificación
+ * El algoritmo ,ayuda , dado el modo en que fue calificada la tarea ya sea una + o un - determinar la calificación
  * Entradas: El modo en que fue calificado,  + o - (caracter), y el numero de + o - que recibió (cruz) o (menos)
  * Parametros: + (mas)
  * Salidas: Se mostrará en pantalla la calificacion obtenida en la tarea segun el numero de cruces o de menos(c)
