@@ -42,7 +42,7 @@
 		 		aux = s;
 		 		s = 0;
 		 	}
-		 	///Verificamos si hemos encontrado algun numero infeliz
+		 	///Verifico si hemos encontrado algun numero infeliz
 		 	if(feliz != 1)
 		 	{
 		 	 printf("%d ",numeros);
