@@ -24,7 +24,7 @@
  	int aux;
  	printf("Introduce cuantos numeros infelices deseas: ");
  	scanf("%d",&n);
- 	printf("Los siguientes numeros son infelices: ",n);
+ 	printf("Los siguientes  numeros son infelices: ");
  	for(int contador = 1; contador<=n; )
  	{
  	    feliz = 0;
