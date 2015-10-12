@@ -19,23 +19,22 @@
  	int s = 0;
  	///Variable para comprobar  si en algun punto la sumatoria da 1
  	int feliz = 0;
+ 	printf("Introduce un numero y se te dirá si es feliz o no: ")
  	scanf("%d",&n);
  	for(int i = 1; i<=8; i++)
  	{
  		///Ciclo para separar el numero digito por digito y acumular la sumatoria de los cuadrados de cada uno
- 		while(n>0)
- 		{
- 			//Tarea
+ 		for(; n>0; n = n / 10)
+ 		{     ///Tarea
  			s = s + (n % 10) * (n % 10);
- 			///Actualización
- 			n = n / 10;
  		}
  		 ///Verifico si despues de sumar los cuadrados, se llegó al 1
  		if(s == 1) feliz = 1;
-       ///Actualización for
+       /// Actualizo n al numero que salio de la descomposicion anterior
  		n = s;
  		s = 0;
  	}
+ 	///Verifico si hemos encontrado algun numero feliz
  	if(feliz == 1)
  	{
  		printf("Feliz");
