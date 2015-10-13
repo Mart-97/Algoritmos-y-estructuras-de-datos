@@ -19,7 +19,7 @@
  	int s = 0;
  	///Variable para comprobar  si en algun punto la sumatoria da 1
  	int feliz = 0;
- 	printf("Introduce un numero y se te dirá si es feliz o no: ")
+ 	printf("Introduce un numero y se te dirá si es feliz o no: ");
  	scanf("%d",&n);
  	for(int i = 1; i<=8; i++)
  	{
