@@ -14,69 +14,51 @@
  int main()
  {
  	///Declaracion de variables
- 	int a,mes,dia;
+ 	int a,m,d;
+ 	int bisiesto;
  	///Lectura de los datos de entrada
  	printf("Introduzca la fecha en formato Año/Mes/Dia: ");
- 	scanf("%d%d%d",&a,&mes,&dia);
- 	if(mes < 13 || mes > 0 || dia > 0 || dia < 32)
+ 	scanf("%d%d%d",&a,&m,&d);
+ 	if((a % 4 == 0 )||(a % 100 == 0 && a % 400 == 0))
+    {
+        bisiesto = 1;
+    } else bisiesto = 0;
+
+    if(m > 0 && m < 13 && d > 0 &&  d < 32)
+ {
+     if(m == 2)
+    {
+        if( d > 29 || (d == 29 && bisiesto == 0)) printf("Fecha invalida");
+         if( d == 29 && bisiesto == 1) printf("%d%d%d",a,m + 1,d + 1);
+         if( (d == 28 && bisiesto == 1) || ( d < 28)) printf("%d%d%d",a,m,d+1);
+
+     } else
      {
- 	if(dia < 28)
- 	{
- 		  dia = dia + 1;
- 	} else
- 	{
- 		if(mes == 2)
- 		{
- 			///Verifico si el año es bisiesto
-          	if((a % 4 == 0) ||  (a % 100 == 0 && a  % 400 == 0))
-          	{
-              		if(dia == 28)
-              		{
-               			dia = dia + 1;
-              		} else
-              		{
-                			dia = 1;
-                			mes = mes + 1;
-              		}
-          	} else
-          	{
-          			dia = 1;
-          			mes = mes + 1;
-          	}
- 		} else
- 		{
- 			if(dia < 30)
- 			{
- 					dia = dia + 1;
- 			} else
- 		  	{
-        			  if(dia == 30)
-        			   	{
-          				    	if(mes == 4 || mes == 6 || mes == 9 || mes == 11)
-          				   	{
-          						     dia = 1;
-                   				mes = mes + 1;
-          					    } else
-          				    	{
-          					    	dia = dia + 1;
-          					    }
-        			  	} else
-              				{
-                					if(mes == 12)
-                					{
-                  						a = a + 1;
-                  						mes = 1;
-                  						dia = 1;
-                					} else
-                				  	{
-                     						dia = 1;
-                           mes = mes + 1;
-                				 	}
-              			}
-  			}
-  		} 
-  	}
- 	printf("La fecha del dia siguiente es: %02d %02d %02d",a,mes,dia);
-     } else printf("Fecha invalida");
- 	return 0;
+         if(m == 1 || m ==3 || m == 5 || m == 7 || m == 8 || m == 10)
+         {
+             if(d == 31)
+             {
+                printf("%d%d%d",a,m + 1 ,d = 1);
+             } else
+             {
+                printf("%d%d%d",a,m,d + 1);
+
+             }
+         } else
+         {
+           if( m == 12 && d == 31)
+           {
+            printf("%d %d %d",a + 1,m = 1, d = 1);
+
+           }else
+           {
+             if(d == 30)printf("%d%d%d",a,m + 1, d + 1);
+             else printf ("%d%d%d",a,m,d + 1);
+           }
+
+         }
+     }
+ } else printf("Fecha no valida");
+ 	///printf("La fecha del dia siguiente es: %02d %02d %02d",a,mes,dia);
+    return 0;
  }
