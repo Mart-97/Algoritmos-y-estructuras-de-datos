@@ -46,8 +46,8 @@
 		 	if(feliz != 1)
 		 	{
 		 	 printf("%d ",numeros);
-                n++;
-		 	}
+                
+		 	} else n++;
         numeros++;
 	}
  	return 0;
