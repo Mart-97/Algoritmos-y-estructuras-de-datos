@@ -7,7 +7,7 @@
  * ALGORITMO PARA IMPRIMIR DETERMINAR NUMEROS INFELICES
  * El algoritmo ,ayuda , dado un numero, imprimir los primeros n numeros infelices
  * Entradas: Un numero (n)
- * Parametros: No hay
+ * Parametros:s y feliz inicializados en 0 y numeros inicalizados en 2
  * Salidas: Se mostrarán en pantalla los primeros n numeros infelices
 ****************************************************************************************************************/
  #include <stdio.h>
@@ -19,7 +19,7 @@
  	int s = 1;
  	///Variable para comprobar  si en algun punto la sumatoria da 1
  	int feliz = 0;
- 	///Variable que se incrementara en 1  mientras no encontremos n numeros infelices
+ 	///Variable para que incrementa en 1 y es la que se imprime si se encuentra un numero infeliz
  	int numeros = 2;
  	int aux;
  	printf("Introduce cuantos numeros infelices deseas: ");
@@ -32,7 +32,7 @@
 		 	for(int i = 1; i<=8; i++)
 		 	{
 		 		///Ciclo para separar el numero digito por digito y acumular la sumatoria de los cuadrados de cada uno
-		 		for (; aux>0; aux = aux / 10 )
+		 		for (aux; aux>0; aux = aux / 10 )
 		 		{       ///Tarea
 		 			s = s + (aux % 10) * (aux % 10);
 		 		}
@@ -42,12 +42,12 @@
 		 		aux = s;
 		 		s = 0;
 		 	}
-		 	///Verifico si hemos encontrado algun numero infeliz
+		 	///Verifico si se encontró  algun numero infeliz
 		 	if(feliz != 1)
 		 	{
 		 	 printf("%d ",numeros);
-                
-		 	} else n++;
+
+		 	} else n++;  ///El else incrementa el tope de n por cada numero feliz que encontremos para asi poder tener los n infelices que necesitamos
         numeros++;
 	}
  	return 0;
