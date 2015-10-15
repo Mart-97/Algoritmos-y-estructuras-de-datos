@@ -23,6 +23,7 @@ int main()
 	scanf("%d%d%d%d",&a,&b,&c,&d);
 	while(a<b && c<d)
 	{
+	///Verifico si los denominadores son iguales
         if(b == d)
         {
             s = a + c;
