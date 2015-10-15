@@ -8,6 +8,7 @@
  *    Dados los 3 lados de un supuesto triangulo, decir si es un triangulo escaleno,
  * ...equilatero o isósceles o si no existe un triangulo...*
  * Entradas: 3 números  (a,b,c)                    *
+ * Parametros: No hay
  * Salidas: Se mostrará en pantalla un texto el cual dirá si el triangulo es “Escaleno”, 
  * ....“Equilatero” o “Isosceles”, o si “No existe un triangulo”...*
 **********************************************************************************/
