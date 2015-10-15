@@ -32,7 +32,7 @@
     		 		c = 85;
     		 	} else
     		 	{
-    		 		c = 75;
+    		 	if(cantidad == 3)	c = 75;
     		 	}
     		 }
  	} else
@@ -50,11 +50,10 @@
        				c = 30;
        			} else
        			{
-       				c = 0;
+       				if (cantidad == 3) c = 0;
        			}
        		}
      }
- 	
  	printf("La calificacion de la tarea es: %d ",c);
  	return 0;
  }
