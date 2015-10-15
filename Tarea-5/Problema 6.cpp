@@ -47,7 +47,7 @@
 		 	{
 		 	 printf("%d ",numeros);
 
-		 	} else n++;  ///El else incrementa el tope de n por cada numero feliz que encontremos para asi poder tener los n infelices que necesitamos
+		 	} else n++;  ///El else incrementa el valor de n por cada numero feliz que encontremos para asi poder tener los n infelices que necesitamos
         numeros++;
 	}
  	return 0;
