@@ -11,9 +11,9 @@ int main()
 		scanf("%d",&numbers [i]);
 		}	
 	}
-	for(int i = 0; i<n; i++)
+	for(int i = 0; i<m; i++)
 	{
-		for(int j = 0; j<m; j++)
+		for(int j = 0; j<n; j++)
 		{
 		printf("%d",numbers [j][i]);
 		}	
