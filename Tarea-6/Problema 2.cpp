@@ -27,7 +27,7 @@ scanf("%d",&n);
 			big2 = numbers[i];
 		}
 	}
-  promedio = (big1 + big2) / 2;
+  promedio = (big1 + big2) / 2.0;
  printf("%d",promedio);
  return 0;
 }
