@@ -20,6 +20,8 @@ i++;
 pos = tam - 1;
 for(int i = 0; i<tam; i++)
 {
+    if(cadena[i]== ' ')i++;
+    if(cadena[pos]==' ')pos--;
    if(cadena[i]!= cadena[pos]) palindromo = 0;
    pos--;
 }
