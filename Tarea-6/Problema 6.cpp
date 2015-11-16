@@ -8,7 +8,6 @@ int main()
 	int columnas;
 	int inicio,fin,n;
 	 scanf("%d%d",&filas,&columnas);
-	int x = 0,y = n - 1;
 for(int i = 0; i<filas; i++)
 {
 	for(int j = 0; j<columnas; j++)
