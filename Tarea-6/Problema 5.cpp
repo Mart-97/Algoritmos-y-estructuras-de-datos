@@ -6,8 +6,6 @@ int main()
  	int  matriz [MAXN][MAXN];
 	int filas;
 	int columnas;
-	int inicio,fin,n;
-	 int palindromo = 0;
 	 scanf("%d%d",&filas,&columnas);
 	int x = 0,y = columnas - 1;
 for(int i = 0; i<filas; i++)
@@ -22,6 +20,5 @@ for(int i = 0; i<filas; i++)
 	x++;
 	y--;
 }
-
  return 0;
 }
