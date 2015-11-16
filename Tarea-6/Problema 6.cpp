@@ -7,18 +7,26 @@ int main()
 	int filas;
 	int columnas;
 	int inicio,fin,n;
-	 scanf("%d%d",&filas,&columnas);
-for(int i = 0; i<filas; i++)
+	 scanf("%d",&n);
+for(int i = 0; i<n; i++)
 {
-	for(int j = 0; j<columnas; j++)
+	for(int j = 0; j<n; j++)
 	{
 		scanf("%d",&matriz[i][j]);
 	}
 
 }
-for(int i = filas - 1; i >= 0; i--)
+for(int i = 0; i<n; i++)
 {
-	for(int j = 0; j < columnas; j++)
+	for(int j = 0; j < n; j++)
+	{
+		printf("%d ",matriz[i][j]);
+	}
+	printf("\n");
+}
+for(int i = n - 1; i >= 0; i--)
+{
+	for(int j = 0; j < n; j++)
 	{
 		printf("%d ",matriz[i][j]);
 	}
