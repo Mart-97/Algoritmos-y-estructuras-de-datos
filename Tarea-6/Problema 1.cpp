@@ -17,7 +17,9 @@ int main()
 	int n;///Variable de entrada
 	int pares = 0;//Parametro
 	int numbers[MAXN];
+printf("¿Cuantos numeros quiere ingresar?: ");
 scanf("%d",&n);
+printf("\nIngrese los numeros: ");
 	for(int i = 0; i<n; i++)
 	{
 		scanf("%d",&numbers [i]);
@@ -25,6 +27,6 @@ scanf("%d",&n);
 		if(numbers[i] %  2 == 0) pares++;
 	}
 
- printf("%d",pares);
+ printf("Hay %d numeros pares en los que ingreso" ,pares);
  return 0;
 }
