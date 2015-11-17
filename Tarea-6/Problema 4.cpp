@@ -20,7 +20,7 @@ int main()
 	int pos = 1;
 
 	 int palindromo = 1;
-
+printf("Ingrese una cadena: ");
 gets(cadena);///Lectura de cadena
 int i = 0;
 ///Calcular el tamaño de la cadena
