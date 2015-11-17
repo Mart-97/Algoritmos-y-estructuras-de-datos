@@ -14,14 +14,14 @@
 int main()
 {
     int numbers[MAXN][MAXN];
-    int m,n;
-	scanf("%d%d",&n,&m);
+    int m,n;///Variables de entrada
+	scanf("%d%d",&n,&m); ///Lectura de las variables de entrada
 
 	for(int i = 0; i<n; i++)
 	{
 		for(int j = 0; j<m; j++)
 		{
-		scanf("%d",&numbers[i][j]);
+		scanf("%d",&numbers[i][j]); ///Lectura de los datos de la matriz
 		}
 	}
 	printf("\n");
@@ -29,7 +29,7 @@ int main()
 	{
 		for(int j = 0; j<m; j++)
 		{
-		printf("%d ",numbers [i][j]);
+		printf("%d ",numbers [i][j]); ///Muestra la matriz ingresada
 		}
 		printf("\n");
 	}
@@ -38,7 +38,7 @@ int main()
 	{
 		for(int j = 0; j<n; j++)
 		{
-		printf("%d ",numbers [j][i]);
+		printf("%d ",numbers [j][i]); ///Intercambio de indices para lograr el cambio de filas por columnas
 		}
 		printf("\n");
 	}
