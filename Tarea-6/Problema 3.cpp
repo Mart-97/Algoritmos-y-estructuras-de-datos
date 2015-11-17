@@ -20,7 +20,9 @@ int main()
 	 int existe = 0;
 	int unicos[MAXN];
 	int numbers[MAXN];
+	printf("¿Cuantos numeros desea?: ");
 scanf("%d",&n);
+printf("Ingrese los numeros: ");
 	for(int i = 0; i<n; i++)
 	{
 		scanf("%d",&numbers[i]);
@@ -44,9 +46,10 @@ unicos[0] = numbers[0];
 		///Actualizamos nuestro indicador de numeros repetidos
 		existe = 0;
 	}
+ printf("El arreglo de numeros unicos contiene: ");
 	for(int i = 0; i<pos; i++)
 	{
-	 	printf("%d",unicos[i]);
+	 	printf("%d ",unicos[i]);
 	}
 
  return 0;
