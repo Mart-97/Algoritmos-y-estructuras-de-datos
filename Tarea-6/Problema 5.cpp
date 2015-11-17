@@ -4,13 +4,12 @@
 int main()
 {
  	int  matriz [MAXN][MAXN];
-	int filas;
-	int columnas;
-	 scanf("%d%d",&filas,&columnas);
-	int x = 0,y = columnas - 1;
-for(int i = 0; i<filas; i++)
+	int n;
+	 scanf("%d",&n);
+	int x = 0,y = n - 1;
+for(int i = 0;  i < n; i++)
 {
-	for(int j = 0; j<columnas; j++)
+	for(int j = 0; j < n; j++)
 	{
 		if(i == j) matriz[i][j] = 1;
 		matriz[x][y] = 1;
