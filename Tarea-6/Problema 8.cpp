@@ -14,12 +14,13 @@
 #define MAXM 100
 int main()
 {
-    int iniciocol = 0;
-int inicioren = 0;
-int m,n; ///Variables de entrada
-	int i = 0, j = 0;
-	int pos = 1;
 	int matriz[MAXN][MAXM];
+	int m,n; ///Variables de entrada
+	///Parametros
+		 int iniciocol = 0;
+		int inicioren = 0;
+		int i = 0, j = 0;
+		int pos = 1;
 
 	scanf("%d%d",&n,&m); //Lectura de variables de entrada
 	int fincol = m - 1;
@@ -35,6 +36,7 @@ for(int i = 0; i<n; i++)
       	///Recorrido por primera  fila superior vacia
           for( j = iniciocol; j< fincol; j++)
           {
+          	////Verificamos si la casilla esta en ceros, si lo está, podemos seguir creando la espiral en la misma
              if(matriz[i][j]== 0)
               {
             matriz[i][j]= pos;
@@ -44,7 +46,7 @@ for(int i = 0; i<n; i++)
           ///Recorrido por la ultima columna vacia
           for( i = inicioren; i < finren; i++)
           {
-           if(matriz[i][j]== 0)
+           if(matriz[i][j]== 0)	////Verificamos si la casilla esta en ceros, si lo está, podemos seguir creando la espiral en la misma
               {
             matriz[i][j]= pos;
               pos++;
@@ -53,6 +55,7 @@ for(int i = 0; i<n; i++)
           ///Recorrido por la ultima fila vacia
            for( j = fincol; j >=iniciocol; j--)
           {
+          	////Verificamos si la casilla esta en ceros, si lo está, podemos seguir creando la espiral en la misma
           	 if(matriz[i][j]== 0)
               {
             matriz[i][j]= pos;
@@ -63,13 +66,14 @@ for(int i = 0; i<n; i++)
           ///Recorrido por la primera columna vacia
           for( i = finren ; i >=inicioren; i--)
           {
+  ////Verificamos si la casilla esta en ceros, si lo está, podemos seguir creando la espiral en la misma
            if(matriz[i][j]== 0)
               {
             matriz[i][j]= pos;
               pos++;
               }
           }
-          ///Actualizamos las variables a conveniencia
+///Actualizamos las variables a conveniencia, nos sirven para ir aumentando nuestro limite de recorrido en la matriz, tanto filas como columnas
           inicioren++;
           	iniciocol++;
           		finren--;
