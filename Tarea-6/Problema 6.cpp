@@ -15,6 +15,7 @@ int main()
 {
  	int  matriz [MAXN][MAXN];
 	int n; //Variable de entrada
+	printf("Ingrese un numero para las dimensiones que desea para la matriz : ");
 	 scanf("%d",&n);/// Entrada de las dimensiones de la matriz
 for(int i = 0; i<n; i++)
 {
@@ -22,9 +23,8 @@ for(int i = 0; i<n; i++)
 	{
 		scanf("%d",&matriz[i][j]); //Lectura del contenido de la matriz
 	}
-
 }
-printf("\n");
+printf("\nEsta es la matriz ingresada:\n");
 for(int i = 0; i<n; i++)
 {
 	for(int j = 0; j < n; j++)
@@ -33,7 +33,7 @@ for(int i = 0; i<n; i++)
 	}
 	printf("\n");
 }
-printf("\n");
+printf("\nEsta es la matriz con las filas intercambiadas:\n");
 for(int i = n - 1; i >= 0; i--) ///Para intercambiar filas se lee desde la ultima  hasta la primera
 {
 	for(int j = 0; j < n; j++)
