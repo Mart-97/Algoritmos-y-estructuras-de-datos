@@ -1,3 +1,15 @@
+/**********************************************************************************
+ *Problema 4.cpp
+ * Programa creado por: Martin Javier Ayala Miranda
+ * Fecha de creación: 15/Nov/2015
+ * Fecha de última modificación: 15/Nov/2015
+ * Descripción:  ALGORITMO PARA DETERMINAR SI UNA CADENA INGRESADA ES UN PALINDROMO
+ *El algoritmo ,ayuda ,dada una cadena  de caracteres determina si es palindromo
+ *Entradas: Una cadena de caracteres(cadena[ ] )
+ *Parametros: Contador para el tamaño de la cadena (tam = 0). Variable para tamaño del segundo arreglo (pos = 1) 
+ *Variable que nos dira si la cadena es o no un palindromo (palindromo = 1)
+ *Salidas: Un texto que indique si la cadena ingresada es palindromo o no 
+ **********************************************************************************/
 #include <stdio.h>
 #include <string.h>
 #define MAXN 1000000
