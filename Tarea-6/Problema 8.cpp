@@ -1,3 +1,14 @@
+/**********************************************************************************
+ *Problema 8.cpp
+ * Programa creado por: Martin Javier Ayala Miranda
+ * Fecha de creación: 15/Nov/2015
+ * Fecha de última modificación: 15/Nov/2015
+ * Descripción:ALGORITMO PARA IMPRIMIR UNA MATRIZ CON NUMEROS CRECIENDO EN UNO , DE MANERA QUE FORMEN UNA ESPIRAL
+ *El algoritmo ,ayuda ,dados 2 numeros m y n, realizar una matriz en espiral con numeros crecientes en uno
+ *Entradas: Una matriz  (matriz[ ][ ],m,n)
+ *Parametros: Para marcar el inicio y fin por cada vuelta de la espiral (iniciocol = 0, inicioren = 0,i = 0, j= 0,pos = 1)
+ *Salidas: La matriz en espiral (matriz[m][n])
+ **********************************************************************************/
 #include <stdio.h>
 #define MAXN 100
 #define MAXM 100
