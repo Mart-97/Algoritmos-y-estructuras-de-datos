@@ -18,12 +18,12 @@ int main()
 	char cadena [MAXN];
 	int tam = 0;
 	int pos = 1;
-	int inicio = 0,fin;
+
 	 int palindromo = 1;
 
-gets(cadena);
-inicio = 0;
+gets(cadena);///Lectura de cadena
 int i = 0;
+///Calcular el tamaño de la cadena
 while(cadena[i] != 0 && i <MAXN )
 {
 tam++;
@@ -32,13 +32,12 @@ i++;
 pos = tam - 1;
 for(int i = 0; i<tam; i++)
 {
-    if(cadena[i]== ' ')i++;
+    if(cadena[i]== ' ')i++; ///En caso de existir espacios , los omitimos
     if(cadena[pos]==' ')pos--;
-   if(cadena[i]!= cadena[pos]) palindromo = 0;
+   if(cadena[i]!= cadena[pos]) palindromo = 0; ///Si palindromos es 0 significa que la cadena en algun punto no es igual
    pos--;
 }
 if(palindromo == 1) printf("La cadena ingresada es palindromo");
 else printf("La cadena ingresada no es palindromo");
-
  return 0;
 }
