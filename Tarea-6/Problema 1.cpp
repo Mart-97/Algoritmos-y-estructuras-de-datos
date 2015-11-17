@@ -14,13 +14,14 @@
 #define MAXN 1000
 int main()
 {
-	int n;
-	int pares = 0;
+	int n;///Variable de entrada
+	int pares = 0;//Parametro
 	int numbers[MAXN];
 scanf("%d",&n);
 	for(int i = 0; i<n; i++)
 	{
 		scanf("%d",&numbers [i]);
+		///Conteo de numeros pares
 		if(numbers[i] %  2 == 0) pares++;
 	}
 
