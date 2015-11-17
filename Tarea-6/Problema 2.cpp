@@ -16,10 +16,13 @@ int main()
 {
 	int n;///Variable de entrada
 	int actual;
+	float promedio;
 	int numbers[MAXN];
 	int big1,big2;
+printf("Ingrese cuantos numeros desea: ");
 scanf("%d",&n);
 ///Lectura del arreglo
+printf("Ingrese los n numeros que desea: ");
 	for(int i = 0; i<n; i++)
 	{
 		scanf("%d",&numbers [i]);
@@ -44,6 +47,6 @@ scanf("%d",&n);
 	}
 	///Calcular el promedio
   promedio = (big1 + big2) / 2.0;
- printf("%d",promedio);
+ printf("El promedio de 2 numeros mas grandes del arreglo es %.2f",promedio);
  return 0;
 }
