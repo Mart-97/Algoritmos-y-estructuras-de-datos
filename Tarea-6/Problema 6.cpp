@@ -1,3 +1,14 @@
+/**********************************************************************************
+ *Problema 6.cpp
+ * Programa creado por: Martin Javier Ayala Miranda
+ * Fecha de creación: 15/Nov/2015
+ * Fecha de última modificación: 15/Nov/2015
+ * Descripción: ALGORITMO PARA INTERCAMBIAR FILAS EN UNA MATRIZ
+ *El algoritmo ,ayuda ,dados una matriz de n * n , intercambiar la ultima fila con la primera,2da con la primera..etc..
+ *Entradas: Un numero (n), Una matriz de numeros(matriz[ ][ ] )
+ *Parametros: No hay
+ *Salidas: La matriz sin cambios . La  matriz con las filas intercambiadas(matriz [ ] [ ])
+ **********************************************************************************/
 #include <stdio.h>
 #define MAXN 100
 int main()
