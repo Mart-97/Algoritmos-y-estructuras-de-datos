@@ -1,3 +1,15 @@
+/***********************************************************************************
+ *Problema 2.cpp
+ * Programa creado por: Martin Javier Ayala Miranda
+ * Fecha de creación: 15/Nov/2015
+ * Fecha de última modificación: 15/Nov/2015
+ * Descripción:
+ *       ALGORITMO PARA DETERMINAR EL PROMEDIO DE LOS 2 NUMEROS MAS GRANDES EN UN ARREGLO
+ *  El algoritmo ,ayuda ,dado un numero  n de numeros, calcula los 2 numeros mas grandes y posteriormente su promedio
+ * Entradas: Un numero (n), n numeros en un arreglo( numbers[ ])
+ *Parametros: No hay
+ *Salidas: El promedio de los 2 numeros mas grandes del arreglo (promedio)”, 
+ **********************************************************************************/
 #include <stdio.h>
 #define MAXN 10000
 int main()
