@@ -17,8 +17,10 @@ int main()
  	int  matriz [MAXN][MAXN];
 	int n; ///Variables de entrada
 	int x = 0; //Parametro que ayuda en la colocacion de 1's desde la posición 0,n-1 a la posición n - 1, 0
+	printf("Ingrese un numero para el tamaño de un matriz de n * n: ");
 	 scanf("%d",&n);
 	int y = n - 1; //Parametro que ayuda en la colocacion de 1's desde la posición 0,n-1 a la posición n - 1, 0
+	printf("La matriz con la cruz de unos de la dimension ingresada es la siguiente :\n");
 for(int i = 0;  i < n; i++)
 {
 	for(int j = 0; j < n; j++)
