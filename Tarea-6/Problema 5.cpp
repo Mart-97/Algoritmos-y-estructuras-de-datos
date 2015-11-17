@@ -15,19 +15,20 @@
 int main()
 {
  	int  matriz [MAXN][MAXN];
-	int n;
-	int x = 0,
+	int n; ///Variables de entrada
+	int x = 0; //Parametro que ayuda en la colocacion de 1's desde la posición 0,n-1 a la posición n - 1, 0
 	 scanf("%d",&n);
-	int y = n - 1;
+	int y = n - 1; //Parametro que ayuda en la colocacion de 1's desde la posición 0,n-1 a la posición n - 1, 0
 for(int i = 0;  i < n; i++)
 {
 	for(int j = 0; j < n; j++)
 	{
-		if(i == j) matriz[i][j] = 1;
-		matriz[x][y] = 1;
+		if(i == j) matriz[i][j] = 1; ///Colocando la primer diagonal
+		matriz[x][y] = 1; //Colocando la segunda diagonal
     printf("%d ",matriz[i][j]);
 	}
 	printf("\n");
+	///Actualizando X y Y simultaneamente para ir bajando en la matriz y colocar la segunda diagonal
 	x++;
 	y--;
 }
