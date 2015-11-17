@@ -13,34 +13,36 @@
 #define MAXN 100
 int main()
 {
-    int numbers[MAXN][MAXN];
+    int matriz[MAXN][MAXN];
     int m,n;///Variables de entrada
+    printf("Ingrese 2 numeros para las dimensiones de la matriz: ");
 	scanf("%d%d",&n,&m); ///Lectura de las variables de entrada
 
 	for(int i = 0; i<n; i++)
 	{
 		for(int j = 0; j<m; j++)
 		{
-		scanf("%d",&numbers[i][j]); ///Lectura de los datos de la matriz
+		scanf("%d",&matriz[i][j]); ///Lectura de los datos de la matriz
 		}
 	}
-	printf("\n");
+	printf("\nEsta es la matriz ingresada:\n");
 	for(int i = 0; i<n; i++)
 	{
 		for(int j = 0; j<m; j++)
 		{
-		printf("%d ",numbers [i][j]); ///Muestra la matriz ingresada
+		printf("%d ",matriz [i][j]); ///Muestra la matriz ingresada
 		}
 		printf("\n");
 	}
-	printf("\n");
+	printf("\nEsta es la matriz transpuesta:\n");
 	for(int i = 0; i<m; i++)
 	{
 		for(int j = 0; j<n; j++)
 		{
-		printf("%d ",numbers [j][i]); ///Intercambio de indices para lograr el cambio de filas por columnas
+		printf("%d ",matriz [j][i]); ///Intercambio de indices para lograr el cambio de filas por columnas
 		}
 		printf("\n");
 	}
  return 0;
 }
+
