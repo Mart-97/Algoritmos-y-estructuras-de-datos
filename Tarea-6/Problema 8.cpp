@@ -21,7 +21,7 @@ int main()
 		int inicioren = 0;
 		int i = 0, j = 0;
 		int pos = 1;
-
+    printf("Ingrese las dimensiones de la matriz: ");
 	scanf("%d%d",&n,&m); //Lectura de variables de entrada
 	int fincol = m - 1;
 int finren = n - 1;
@@ -30,7 +30,6 @@ for(int i = 0; i<n; i++)
 {
   for(int j = 0; j<m; j++) matriz[i][j] = 0;
 }
-
 	  while(pos <= n * m)
       {
       	///Recorrido por primera  fila superior vacia
@@ -81,7 +80,7 @@ for(int i = 0; i<n; i++)
             		i = inicioren;
             		j = iniciocol;
       }
-
+printf("La matriz en espiral es la siguiente:\n");
 	for(int i = 0; i<n; i++)
 	{
 		for(int j = 0; j<m; j++)
@@ -90,6 +89,5 @@ for(int i = 0; i<n; i++)
 		}
 		printf("\n");
 	}
-
  return 0;
 }
